@@ -17,7 +17,7 @@ void Game::Update() {
     player->Update();
 }
 void Game::Render() {
-    SDL_SetRenderDrawColor( renderer, 100, 0, 0, 0 );
+    SDL_SetRenderDrawColor( renderer, 0, 0, 0, 0 );
     SDL_RenderClear( renderer );
 
     gameMap->Render();

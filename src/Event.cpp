@@ -1,5 +1,4 @@
 #include "Event.hpp"
-#include <iostream>
 
 Event::Event( bool *running, Player *player, GameMap *gameMap ) {
     _running = running;

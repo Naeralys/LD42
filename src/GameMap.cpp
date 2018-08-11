@@ -1,5 +1,4 @@
 #include "GameMap.hpp"
-#include <iostream>
 
 GameMap::GameMap( SDL_Renderer* renderer ) {
     this->renderer = renderer;
@@ -22,7 +21,7 @@ void GameMap::Update() {
     }
 }
 void GameMap::Render() {
-    SDL_SetRenderDrawColor( renderer, 0, 0, 0, 0);
+    SDL_SetRenderDrawColor( renderer, 158, 195, 255, 0);
     SDL_RenderFillRect( renderer, &rect );
 }
 void GameMap::Reset() {

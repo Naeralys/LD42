@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
 #include "Event.hpp"
 #include "GameObject.hpp"
 #include "GameMap.hpp"

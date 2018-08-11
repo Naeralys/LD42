@@ -26,11 +26,10 @@ void Player::Update() {
     if( _fps > 20 ) {
         _fps = 0;
         UpdateScore();
-        std::cout << "Score: " << _score << std::endl;
     }
 }
 void Player::Render() {
-    SDL_SetRenderDrawColor( renderer, 255, 255, 255, 255 );
+    SDL_SetRenderDrawColor( renderer, 0, 0, 0, 0 );
     SDL_RenderFillRect( renderer, &rect );
 }
 void Player::UpdateScore() {
@@ -46,8 +45,11 @@ void Player::UpdateScore() {
     }
 }
 void Player::Reset() {
-    rect.x = 390;
-    rect.y = 390;
+    std::cout << "Score: " << _score << std::endl;
+    _x = 390;
+    _y = 390;
+    rect.x = _x;
+    rect.y = _y;
     rect.w = 20;
     rect.h = 20;
     _velX = 0;
